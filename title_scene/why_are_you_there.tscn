@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://bfva6v87t83bw"]
+
+[ext_resource type="Script" uid="uid://duigvnv1hdwur" path="res://title_scene/go_back.gd" id="1_d7m5w"]
+[ext_resource type="Texture2D" uid="uid://dw6f8d7o30h6q" path="res://spidertitl.png" id="2_haddc"]
+[ext_resource type="FontFile" uid="uid://f34qyengpmy5" path="res://MADE Soulmaze Outline PERSONAL USE.otf" id="3_dvhe3"]
+[ext_resource type="FontFile" uid="uid://hy8j1vqiuna" path="res://MADE Soulmaze PERSONAL USE.otf" id="4_kk5w1"]
+[ext_resource type="FontFile" uid="uid://buqxbepgdtahe" path="res://MADE Soulmaze Italic PERSONAL USE.otf" id="5_tvbcf"]
+
+[node name="WhyAreYouThere" type="Node2D" unique_id=286724425]
+script = ExtResource("1_d7m5w")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1150059841]
+offset_right = 1156.0
+offset_bottom = 652.0
+texture = ExtResource("2_haddc")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1942117919]
+offset_left = 137.0
+offset_top = 63.0
+offset_right = 1058.0
+offset_bottom = 466.0
+theme_override_constants/outline_size = 7
+theme_override_fonts/normal_font = ExtResource("3_dvhe3")
+theme_override_font_sizes/normal_font_size = 67
+text = "Why are you there ?"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="." unique_id=1231577015]
+offset_left = 51.0
+offset_top = 217.0
+offset_right = 1095.0
+offset_bottom = 382.0
+theme_override_constants/outline_size = 7
+theme_override_fonts/normal_font = ExtResource("4_kk5w1")
+theme_override_font_sizes/normal_font_size = 28
+text = "Why did you punch spidey ??
+
+"
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="." unique_id=2025965787]
+offset_left = 273.0
+offset_top = 595.0
+offset_right = 1317.0
+offset_bottom = 760.0
+theme_override_colors/default_color = Color(1, 0.7921569, 1, 1)
+theme_override_colors/font_outline_color = Color(0.34901962, 0, 0, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/normal_font = ExtResource("4_kk5w1")
+theme_override_font_sizes/normal_font_size = 28
+text = "Thank you for playing to my game."
+
+[node name="back" type="Button" parent="." unique_id=17235734]
+offset_left = 313.0
+offset_top = 362.0
+offset_right = 987.0
+offset_bottom = 484.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("5_tvbcf")
+theme_override_font_sizes/font_size = 47
+text = "go back to the game"
+flat = true
+
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]
