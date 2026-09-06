@@ -6,7 +6,7 @@ var time : float
 var finished = false # empêche de déclencher la transition plusieurs fois
 
 func _ready() -> void:
-	Timer(30) # on lance le minuteur SANS await, pour ne pas bloquer _ready()
+	Timer(15) # on lance le minuteur SANS await, pour ne pas bloquer _ready()
 
 func _process(delta: float) -> void:
 	timer.text = str(snapped(time, 0.10))

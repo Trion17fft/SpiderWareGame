@@ -1,0 +1,229 @@
+[gd_scene format=3 uid="uid://cjno6t8y5am6m"]
+
+[ext_resource type="Texture2D" uid="uid://dw6f8d7o30h6q" path="res://spidertitl.png" id="1_ju4f3"]
+[ext_resource type="Script" uid="uid://ch8fr2r5u3k42" path="res://scenes/minigame_2.gd" id="1_uiylj"]
+[ext_resource type="Texture2D" uid="uid://drpb2dakvaeqd" path="res://Carnage.png" id="3_eachr"]
+[ext_resource type="Texture2D" uid="uid://b60ihch57eumr" path="res://Doctor Octopus.png" id="4_6tcq3"]
+[ext_resource type="Texture2D" uid="uid://bynx65n2bae42" path="res://Green Goblin.png" id="5_6co8m"]
+[ext_resource type="Texture2D" uid="uid://62r4h3jyisxr" path="res://Mysterio.png" id="6_tbdge"]
+[ext_resource type="Texture2D" uid="uid://c3rx5bddg8bo5" path="res://Venom.png" id="7_my5wa"]
+
+[sub_resource type="GDScript" id="GDScript_wj7t2"]
+script/source = "extends TextureButton
+@onready var parent = $\"..\"
+
+func _on_pressed() -> void: #YOU NEED TO CONNECT THIS SIGNAL FROM THE TAB NEXT TO INSPECTOR!!
+	self.hide()	
+	parent.buttons_pressed += 1
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[sub_resource type="Animation" id="Animation_r0kah"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(805, 221)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [3.1415927]
+}
+
+[sub_resource type="Animation" id="Animation_q3ivc"]
+resource_name = "impossible"
+length = 3.0000000000000004
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1, 1.5, 2.9504416),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(805, 221), Vector2(736.00006, 108), Vector2(826, 38), Vector2(929, 44), Vector2(1089, 255), Vector2(862.0001, 167), Vector2(787, 201)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.75, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 3.1415927, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_srbim"]
+_data = {
+&"RESET": SubResource("Animation_r0kah"),
+&"impossible": SubResource("Animation_q3ivc")
+}
+
+[sub_resource type="Animation" id="Animation_eachr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(748.99994, 503)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.073, 0.076)]
+}
+
+[sub_resource type="Animation" id="Animation_6tcq3"]
+resource_name = "impossible"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(748.99994, 503), Vector2(379.99997, 519)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.172, 0.176), Vector2(0.073, 0.076)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6co8m"]
+_data = {
+&"RESET": SubResource("Animation_eachr"),
+&"impossible": SubResource("Animation_6tcq3")
+}
+
+[node name="minigame_2" type="Node2D" unique_id=674033013]
+script = ExtResource("1_uiylj")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1377213363]
+offset_top = 5.0
+offset_right = 1150.0
+offset_bottom = 647.0
+texture = ExtResource("1_ju4f3")
+
+[node name="timer" type="RichTextLabel" parent="." unique_id=810428710]
+offset_left = 478.0
+offset_top = 29.0
+offset_right = 640.0
+offset_bottom = 142.0
+theme_override_font_sizes/normal_font_size = 80
+text = "0,0"
+
+[node name="button_1" type="TextureButton" parent="." unique_id=1643185514]
+offset_left = 805.0
+offset_top = 221.0
+offset_right = 1540.0027
+offset_bottom = 1090.0078
+rotation = 3.1415927
+scale = Vector2(0.12511286, 0.1047024)
+action_mode = 0
+texture_normal = ExtResource("3_eachr")
+script = SubResource("GDScript_wj7t2")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="button_1" unique_id=2132751105]
+libraries/ = SubResource("AnimationLibrary_srbim")
+autoplay = &"impossible"
+
+[node name="button_2" type="TextureButton" parent="." unique_id=2012430437]
+offset_left = 748.99994
+offset_top = 503.0
+offset_right = 1485.0034
+offset_bottom = 1063.0002
+scale = Vector2(0.073, 0.076)
+action_mode = 0
+texture_normal = ExtResource("4_6tcq3")
+script = SubResource("GDScript_wj7t2")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="button_2" unique_id=1318637084]
+libraries/ = SubResource("AnimationLibrary_6co8m")
+autoplay = &"impossible"
+
+[node name="button_3" type="TextureButton" parent="." unique_id=196491606]
+offset_left = 472.00003
+offset_top = 245.99998
+offset_right = 1192.0
+offset_bottom = 868.0
+scale = Vector2(0.1510217, 0.15391852)
+texture_normal = ExtResource("5_6co8m")
+script = SubResource("GDScript_wj7t2")
+
+[node name="button_4" type="TextureButton" parent="." unique_id=671410195]
+offset_left = 953.0
+offset_top = 360.99997
+offset_right = 1575.0
+offset_bottom = 999.0
+scale = Vector2(0.16222617, 0.1502796)
+texture_normal = ExtResource("6_tbdge")
+script = SubResource("GDScript_wj7t2")
+
+[node name="button_5" type="TextureButton" parent="." unique_id=502972428]
+offset_left = 127.000046
+offset_top = 103.00001
+offset_right = 863.00006
+offset_bottom = 839.0
+scale = Vector2(0.16413374, 0.14050822)
+texture_normal = ExtResource("7_my5wa")
+script = SubResource("GDScript_wj7t2")
+
+[connection signal="pressed" from="button_1" to="." method="_on_pressed"]
+[connection signal="pressed" from="button_2" to="." method="_on_pressed"]
+[connection signal="pressed" from="button_3" to="." method="_on_pressed"]
+[connection signal="pressed" from="button_4" to="." method="_on_pressed"]
+[connection signal="pressed" from="button_5" to="." method="_on_pressed"]

@@ -121,7 +121,7 @@ tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/path = NodePath("Web2/Web:size")
-tracks/2/interp = 1
+tracks/2/interp = 2
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0, 1),
@@ -293,6 +293,7 @@ metadata/_edit_use_anchors_ = true
 [node name="animation" type="AnimationPlayer" parent="Web" unique_id=1860095243]
 root_node = NodePath("../..")
 libraries/ = SubResource("AnimationLibrary_j1cg4")
+autoplay = &"float"
 
 [node name="Area2D" type="Area2D" parent="Web" unique_id=1849463418]
 position = Vector2(-36, -2)

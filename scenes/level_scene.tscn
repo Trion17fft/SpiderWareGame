@@ -3,6 +3,8 @@
 [ext_resource type="Script" uid="uid://c5do0pjm55vt" path="res://scenes/timer_screen.gd" id="1_a74lg"]
 [ext_resource type="Texture2D" uid="uid://cmuusyeqfm8iq" path="res://spidertitle.png" id="2_c8xsp"]
 [ext_resource type="Texture2D" uid="uid://iln6v2tv2a55" path="res://Web.png" id="3_fkwfp"]
+[ext_resource type="FontFile" uid="uid://buqxbepgdtahe" path="res://MADE Soulmaze Italic PERSONAL USE.otf" id="4_c8xsp"]
+[ext_resource type="FontFile" uid="uid://chx1umwkubnbk" path="res://AVENGEANCE HEROIC AVENGER BD.otf" id="4_fkwfp"]
 
 [node name="level_scene" type="Node2D" unique_id=979992041]
 script = ExtResource("1_a74lg")
@@ -15,10 +17,10 @@ offset_bottom = 649.0
 texture = ExtResource("2_c8xsp")
 
 [node name="WebContainer" type="HBoxContainer" parent="." unique_id=673936090]
-offset_left = 614.0
-offset_top = 14.0
-offset_right = 1135.0
-offset_bottom = 114.0
+offset_left = 287.0
+offset_top = 382.0
+offset_right = 952.0
+offset_bottom = 506.0
 
 [node name="Web" type="TextureRect" parent="WebContainer" unique_id=1266570219]
 layout_mode = 2
@@ -46,19 +48,24 @@ texture = ExtResource("3_fkwfp")
 expand_mode = 2
 
 [node name="Level" type="RichTextLabel" parent="." unique_id=1545291334]
-offset_left = 804.0
-offset_top = 113.0
-offset_right = 1049.0
-offset_bottom = 181.0
+offset_left = 503.0
+offset_top = 283.0
+offset_right = 809.0
+offset_bottom = 387.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/normal_font_size = 42
+theme_override_fonts/normal_font = ExtResource("4_fkwfp")
+theme_override_font_sizes/normal_font_size = 70
 text = "Level #"
 
 [node name="Timer" type="RichTextLabel" parent="." unique_id=2103919296]
-offset_left = 974.0
-offset_top = 210.0
-offset_right = 1190.0
-offset_bottom = 278.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/normal_font_size = 42
+offset_left = 407.0
+offset_top = 109.0
+offset_right = 818.0
+offset_bottom = 291.0
+theme_override_colors/default_color = Color(0.5294118, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/normal_font = ExtResource("4_c8xsp")
+theme_override_font_sizes/normal_font_size = 99
 text = "0,0"
+horizontal_alignment = 1
