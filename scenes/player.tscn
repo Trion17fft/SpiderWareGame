@@ -16,7 +16,7 @@ texture = ExtResource("2_qhqgy")
 position = Vector2(3.5, 0.5)
 shape = SubResource("RectangleShape2D_vtiac")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=361694480]
+[node name="Area2D" type="Area2D" parent="." unique_id=361694480 groups=["player"]]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=1146511973]
 position = Vector2(3.5, 0.5)

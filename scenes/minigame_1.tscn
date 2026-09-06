@@ -361,3 +361,7 @@ theme_override_fonts/normal_font = ExtResource("6_j1cg4")
 theme_override_font_sizes/normal_font_size = 49
 text = "0,0
 "
+
+[connection signal="Web_collected" from="Web" to="." method="Web_collected"]
+[connection signal="Web_collected" from="Web2" to="." method="Web_collected"]
+[connection signal="Web_collected" from="Web3" to="." method="Web_collected"]
