@@ -19,7 +19,7 @@ func _process(delta: float) -> void:
 		if Global.minigames_done > 3:
 			get_tree().change_scene_to_file("res://scenes/done_screen.tscn")
 		else:
-			get_tree().change_scene_to_file("res://scenes/timer_screen.tscn")
+			get_tree().change_scene_to_file("res://scenes/level_scene.tscn")
 
 	elif time <= 0.0: # défaite (temps écoulé sans les 3 toiles)
 		finished = true
