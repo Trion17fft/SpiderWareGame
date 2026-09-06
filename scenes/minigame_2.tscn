@@ -222,8 +222,8 @@ scale = Vector2(0.16413374, 0.14050822)
 texture_normal = ExtResource("7_my5wa")
 script = SubResource("GDScript_wj7t2")
 
-[connection signal="pressed" from="button_1" to="." method="_on_pressed"]
-[connection signal="pressed" from="button_2" to="." method="_on_pressed"]
-[connection signal="pressed" from="button_3" to="." method="_on_pressed"]
-[connection signal="pressed" from="button_4" to="." method="_on_pressed"]
-[connection signal="pressed" from="button_5" to="." method="_on_pressed"]
+[connection signal="pressed" from="button_1" to="button_1" method="_on_pressed"]
+[connection signal="pressed" from="button_2" to="button_2" method="_on_pressed"]
+[connection signal="pressed" from="button_3" to="button_3" method="_on_pressed"]
+[connection signal="pressed" from="button_4" to="button_4" method="_on_pressed"]
+[connection signal="pressed" from="button_5" to="button_5" method="_on_pressed"]

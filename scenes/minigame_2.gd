@@ -17,7 +17,7 @@ func _process(delta: float) -> void:
 		if Global.minigames_done > 3:
 			get_tree().change_scene_to_file("res://scenes/done_screen.tscn")
 		else:
-			get_tree().change_scene_to_file("res://scenes/timer_screen.tscn")
+			get_tree().change_scene_to_file("res://scenes/level_scene.tscn")
 	elif time <= 0.0: # défaite (temps écoulé sans les 3 toiles)
 		Global.minigames_done -= 1
 		Global.lives -= 1
@@ -40,7 +40,3 @@ func Timer(start_time: float): # making a new function for timer countdown!
 	
 func wait(seconds: float) -> void: # write this simple function out for wait!
 	await get_tree().create_timer(seconds).timeout # makes u wait
-
-
-func _on_pressed() -> void:
-	pass # Replace with function body.
