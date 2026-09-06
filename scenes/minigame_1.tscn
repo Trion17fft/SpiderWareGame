@@ -109,13 +109,61 @@ tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/path = NodePath("Web/Web:size")
-tracks/1/interp = 1
+tracks/1/interp = 2
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(95.00037, 95.00026), Vector2(105.09, 105.09)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Web2/Web:size")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(95.000244, 95), Vector2(105, 105)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Web2/Web:position")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1010, 10), Vector2(999, 12)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Web3/Web:size")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(95, 95), Vector2(105, 105)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Web3/Web:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1010, 10), Vector2(997, 19)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_j1cg4"]
@@ -248,9 +296,10 @@ libraries/ = SubResource("AnimationLibrary_j1cg4")
 
 [node name="Area2D" type="Area2D" parent="Web" unique_id=1849463418]
 position = Vector2(-36, -2)
+collision_layer = 28
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Web/Area2D" unique_id=1993333583]
-position = Vector2(1094, 60)
+position = Vector2(1123, 67)
 shape = SubResource("CircleShape2D_qebma")
 
 [node name="Web2" type="Node2D" parent="." unique_id=312045944]
