@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://pafi3pgj6njn"]
 
 [ext_resource type="Texture2D" uid="uid://cmuusyeqfm8iq" path="res://spidertitle.png" id="1_pky41"]
-[ext_resource type="Script" uid="uid://bybeb1wjvyd4t" path="res://title_scene/scene.gd" id="1_syh38"]
+[ext_resource type="Script" uid="uid://bybeb1wjvyd4t" path="res://scenes/scene.gd" id="1_syh38"]
 [ext_resource type="FontFile" uid="uid://buqxbepgdtahe" path="res://MADE Soulmaze Italic PERSONAL USE.otf" id="3_3iq7y"]
 [ext_resource type="FontFile" uid="uid://c1mixdgabti1j" path="res://Spiderman-g2wP.ttf" id="3_nv2rl"]
 
