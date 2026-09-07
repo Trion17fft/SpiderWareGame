@@ -278,7 +278,7 @@ shape = SubResource("RectangleShape2D_xy8ut")
 position = Vector2(486, 531)
 
 [node name="Web" type="Node2D" parent="." unique_id=900341925]
-position = Vector2(-381, 522)
+position = Vector2(-106, 399)
 script = ExtResource("3_v5ebm")
 
 [node name="Web" type="TextureRect" parent="Web" unique_id=1808191183]
@@ -328,7 +328,7 @@ position = Vector2(1094, 60)
 shape = SubResource("CircleShape2D_qebma")
 
 [node name="Web3" type="Node2D" parent="." unique_id=1459288723]
-position = Vector2(-553, 278)
+position = Vector2(-1008, 0)
 script = ExtResource("3_v5ebm")
 
 [node name="Web" type="TextureRect" parent="Web3" unique_id=464596515]

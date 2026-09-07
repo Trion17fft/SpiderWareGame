@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dw6f8d7o30h6q" path="res://spidertitl.png" id="1_ju4f3"]
 [ext_resource type="Script" uid="uid://ch8fr2r5u3k42" path="res://scenes/minigame_2.gd" id="1_uiylj"]
+[ext_resource type="FontFile" uid="uid://chx1umwkubnbk" path="res://AVENGEANCE HEROIC AVENGER BD.otf" id="3_6tcq3"]
 [ext_resource type="Texture2D" uid="uid://drpb2dakvaeqd" path="res://Carnage.png" id="3_eachr"]
 [ext_resource type="Texture2D" uid="uid://b60ihch57eumr" path="res://Doctor Octopus.png" id="4_6tcq3"]
 [ext_resource type="Texture2D" uid="uid://bynx65n2bae42" path="res://Green Goblin.png" id="5_6co8m"]
@@ -114,6 +115,42 @@ tracks/1/keys = {
 "update": 0,
 "values": [Vector2(0.073, 0.076)]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../button_3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(445.00003, 327)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../button_4:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(990, 514)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../button_5:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(89, -2.9999847)]
+}
 
 [sub_resource type="Animation" id="Animation_6tcq3"]
 resource_name = "impossible"
@@ -142,6 +179,42 @@ tracks/1/keys = {
 "update": 0,
 "values": [Vector2(0.172, 0.176), Vector2(0.073, 0.076)]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../button_3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(445.00003, 327), Vector2(320.00003, 210), Vector2(461, 153), Vector2(491.00003, 259), Vector2(388, 332)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../button_4:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(990, 514), Vector2(990, 353.00006), Vector2(776, 346.00003)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../button_5:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(89, -2.9999847), Vector2(89, 135.225), Vector2(89, 312.265)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6co8m"]
 _data = {
@@ -159,18 +232,23 @@ offset_bottom = 647.0
 texture = ExtResource("1_ju4f3")
 
 [node name="timer" type="RichTextLabel" parent="." unique_id=810428710]
-offset_left = 478.0
-offset_top = 29.0
-offset_right = 640.0
-offset_bottom = 142.0
+offset_left = 486.0
+offset_top = 48.0
+offset_right = 648.0
+offset_bottom = 161.0
+theme_override_colors/default_color = Color(1, 0.49411765, 0.47058824, 1)
+theme_override_constants/outline_size = 9
+theme_override_fonts/normal_font = ExtResource("3_6tcq3")
 theme_override_font_sizes/normal_font_size = 80
 text = "0,0"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="button_1" type="TextureButton" parent="." unique_id=1643185514]
 offset_left = 805.0
 offset_top = 221.0
-offset_right = 1540.0027
-offset_bottom = 1090.0078
+offset_right = 1540.0095
+offset_bottom = 1090.0042
 rotation = 3.1415927
 scale = Vector2(0.12511286, 0.1047024)
 action_mode = 0
@@ -184,8 +262,8 @@ autoplay = &"impossible"
 [node name="button_2" type="TextureButton" parent="." unique_id=2012430437]
 offset_left = 748.99994
 offset_top = 503.0
-offset_right = 1485.0034
-offset_bottom = 1063.0002
+offset_right = 1485.007
+offset_bottom = 1063.05
 scale = Vector2(0.073, 0.076)
 action_mode = 0
 texture_normal = ExtResource("4_6tcq3")
@@ -196,28 +274,29 @@ libraries/ = SubResource("AnimationLibrary_6co8m")
 autoplay = &"impossible"
 
 [node name="button_3" type="TextureButton" parent="." unique_id=196491606]
-offset_left = 472.00003
-offset_top = 245.99998
-offset_right = 1192.0
-offset_bottom = 868.0
+offset_left = 445.00003
+offset_top = 327.0
+offset_right = 1165.0256
+offset_bottom = 949.0
 scale = Vector2(0.1510217, 0.15391852)
 texture_normal = ExtResource("5_6co8m")
 script = SubResource("GDScript_wj7t2")
 
 [node name="button_4" type="TextureButton" parent="." unique_id=671410195]
-offset_left = 953.0
-offset_top = 360.99997
-offset_right = 1575.0
-offset_bottom = 999.0
+offset_left = 990.0
+offset_top = 514.0
+offset_right = 1612.0
+offset_bottom = 1152.0505
 scale = Vector2(0.16222617, 0.1502796)
 texture_normal = ExtResource("6_tbdge")
 script = SubResource("GDScript_wj7t2")
 
 [node name="button_5" type="TextureButton" parent="." unique_id=502972428]
-offset_left = 127.000046
-offset_top = 103.00001
-offset_right = 863.00006
-offset_bottom = 839.0
+offset_left = 89.0
+offset_top = -2.9999847
+offset_right = 825.0
+offset_bottom = 733.0045
+rotation = 1.5707964
 scale = Vector2(0.16413374, 0.14050822)
 texture_normal = ExtResource("7_my5wa")
 script = SubResource("GDScript_wj7t2")

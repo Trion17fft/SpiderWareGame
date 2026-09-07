@@ -1,0 +1,120 @@
+[gd_scene format=3 uid="uid://bom2253qpldrk"]
+
+[ext_resource type="Texture2D" uid="uid://cmuusyeqfm8iq" path="res://spidertitle.png" id="1_k66lo"]
+[ext_resource type="Texture2D" uid="uid://8hthl6x6enki" path="res://scenes/Spiderglide.png" id="2_c2erd"]
+[ext_resource type="Texture2D" uid="uid://cw8efm5v3aq1w" path="res://Happy_Spidey.png" id="3_t6dg5"]
+[ext_resource type="FontFile" uid="uid://chx1umwkubnbk" path="res://AVENGEANCE HEROIC AVENGER BD.otf" id="4_t6dg5"]
+[ext_resource type="FontFile" uid="uid://hy8j1vqiuna" path="res://MADE Soulmaze PERSONAL USE.otf" id="5_deqd5"]
+
+[sub_resource type="GDScript" id="GDScript_5lftu"]
+script/source = "extends Node2D
+
+@onready var cookie_label: RichTextLabel = $cookies
+@onready var multi_label: Button= $mult
+
+var cookies: float = 0
+var mult: float = 1        # multiplicateur de gain par clic, augmenté par le bouton amélioration
+var cost: float = 10
+
+func _ready() -> void:
+	pass
+
+func _process(delta: float) -> void:
+	cookie_label.text = str(int(cookies))
+	multi_label.text = str(int(cost))
+	if Input.is_action_just_pressed(\"buy_mult\"):
+		if cookies >= cost:
+			cookies -= cost
+			mult += 0.25
+			cost = 10 * mult
+
+# Bouton retour en arrière (garde ce nom, connecté à ton bouton \"back\")
+func _on_back_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://scenes/scene.tscn\")
+
+# Bouton cookie cliquable
+func _on_cookie_pressed() -> void:
+	cookies += 1 * mult
+
+# Bouton amélioration : augmente le multiplicateur
+func _on_mult_button_pressed() -> void:
+	if cookies >= cost:
+		cookies -= cost
+		mult += 0.25
+	cost = 10 * mult # le prix augmente avec le niveau actuel du multiplicateur
+		
+"
+
+[node name="done_screen" type="Node2D" unique_id=658016781]
+script = SubResource("GDScript_5lftu")
+
+[node name="background" type="TextureRect" parent="." unique_id=276277744]
+offset_right = 1154.0
+offset_bottom = 652.0
+texture = ExtResource("1_k66lo")
+
+[node name="GG" type="RichTextLabel" parent="." unique_id=1273132076]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = -1.5200001
+anchor_right = 0.5
+anchor_bottom = -1.5200001
+offset_left = 213.0
+offset_top = 45.0
+offset_right = 1366.0
+offset_bottom = 339.0
+scale = Vector2(0.61, 0.61)
+theme_override_colors/default_color = Color(1, 0.49411765, 0.47058824, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_outline_size = 8
+theme_override_constants/shadow_offset_x = 15
+theme_override_constants/shadow_offset_y = 13
+theme_override_constants/outline_size = 6
+theme_override_fonts/normal_font = ExtResource("4_t6dg5")
+theme_override_font_sizes/normal_font_size = 154
+text = "GOOD     GAME  !! ²
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Restart" type="Button" parent="." unique_id=153306375]
+offset_left = 382.0
+offset_top = 453.0
+offset_right = 765.0
+offset_bottom = 584.0
+theme_override_colors/font_color = Color(1, 0.49411765, 0.47058824, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("5_deqd5")
+theme_override_font_sizes/font_size = 51
+text = "Play Again"
+flat = true
+icon_alignment = 1
+
+[node name="cookies" type="RichTextLabel" parent="." unique_id=1564352374]
+offset_left = 862.0
+offset_top = 315.0
+offset_right = 1005.0
+offset_bottom = 416.0
+theme_override_font_sizes/normal_font_size = 64
+text = "0"
+
+[node name="Clicker" type="TextureButton" parent="." unique_id=150831019]
+offset_left = 490.0
+offset_top = 238.00003
+offset_right = 740.0
+offset_bottom = 485.00003
+scale = Vector2(0.6088183, 0.53812647)
+focus_mode = 0
+texture_normal = ExtResource("2_c2erd")
+texture_hover = ExtResource("3_t6dg5")
+
+[node name="mult" type="Button" parent="." unique_id=644752409]
+offset_left = 856.0
+offset_top = 408.0
+offset_right = 976.0
+offset_bottom = 480.0
+text = "0"
+
+[connection signal="pressed" from="Restart" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Clicker" to="." method="_on_cookie_pressed"]
+[connection signal="pressed" from="mult" to="." method="_on_mult_button_pressed"]
