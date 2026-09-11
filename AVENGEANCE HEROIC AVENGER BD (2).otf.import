@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://csb0a1p502gkr"
-path="res://.godot/imported/AVENGEANCE HEROIC AVENGER BD.otf-eea3703b9f66b53b9b9105bd7f9ecb02.fontdata"
+path="res://.godot/imported/AVENGEANCE HEROIC AVENGER BD (2).otf-b62b32be6ba6bdf64d9954cc3012a119.fontdata"
 
 [deps]
 
-source_file="res://scenes/AVENGEANCE HEROIC AVENGER BD.otf"
-dest_files=["res://.godot/imported/AVENGEANCE HEROIC AVENGER BD.otf-eea3703b9f66b53b9b9105bd7f9ecb02.fontdata"]
+source_file="res://AVENGEANCE HEROIC AVENGER BD (2).otf"
+dest_files=["res://.godot/imported/AVENGEANCE HEROIC AVENGER BD (2).otf-b62b32be6ba6bdf64d9954cc3012a119.fontdata"]
 
 [params]
 

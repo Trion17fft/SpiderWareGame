@@ -5,6 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://b4hpkx1iq5oh6" path="res://scenes/player.tscn" id="2_og05i"]
 [ext_resource type="Texture2D" uid="uid://iln6v2tv2a55" path="res://Web.png" id="3_lmjug"]
 [ext_resource type="Script" uid="uid://degfgnktbcdnt" path="res://scenes/web.gd" id="3_v5ebm"]
+[ext_resource type="Texture2D" uid="uid://dui5c4nn3ao8o" path="res://brick_texture_198x27.png" id="3_vc5od"]
+[ext_resource type="Texture2D" uid="uid://b7uj2lpauvh4p" path="res://brick_texture_1154x40.png" id="3_xpvfh"]
 [ext_resource type="FontFile" uid="uid://hy8j1vqiuna" path="res://MADE Soulmaze PERSONAL USE.otf" id="6_j1cg4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qebma"]
@@ -190,92 +192,87 @@ texture = ExtResource("1_tk6fs")
 
 [node name="Platform1" type="StaticBody2D" parent="." unique_id=1244020407]
 
-[node name="ColorRect" type="ColorRect" parent="Platform1" unique_id=2146349729]
-offset_top = 634.0
-offset_right = 328.0
-offset_bottom = 674.0
-scale = Vector2(3.52, 1)
-color = Color(1, 0.22745098, 0.011764706, 1)
-metadata/_edit_use_anchors_ = true
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform1" unique_id=535733914]
 position = Vector2(576.75, 654)
 shape = SubResource("RectangleShape2D_qebma")
 
-[node name="Platform2" type="StaticBody2D" parent="." unique_id=2061913781]
+[node name="TextureRect" type="TextureRect" parent="Platform1" unique_id=2068264268]
+offset_top = 634.0
+offset_right = 1154.0
+offset_bottom = 674.0
+texture = ExtResource("3_xpvfh")
 
-[node name="ColorRect" type="ColorRect" parent="Platform2" unique_id=1687441541]
-offset_left = 144.0
-offset_top = 594.0
-offset_right = 342.0
-offset_bottom = 621.0
-color = Color(1, 0.22745098, 0.011764706, 1)
+[node name="Platform2" type="StaticBody2D" parent="." unique_id=2061913781]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform2" unique_id=1762499646]
 position = Vector2(243, 607.5)
 shape = SubResource("RectangleShape2D_wj7t2")
 
+[node name="TextureRect" type="TextureRect" parent="Platform2" unique_id=120404988]
+offset_left = 144.0
+offset_top = 594.0
+offset_right = 184.0
+offset_bottom = 621.0
+texture = ExtResource("3_vc5od")
+
 [node name="Platform3" type="StaticBody2D" parent="." unique_id=1694510334]
 position = Vector2(-216, 95)
-
-[node name="ColorRect" type="ColorRect" parent="Platform3" unique_id=1692424445]
-offset_left = 888.0
-offset_top = 391.0
-offset_right = 1086.0
-offset_bottom = 418.0
-color = Color(1, 0.22745098, 0.011764706, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform3" unique_id=20361379]
 position = Vector2(987, 404.5)
 shape = SubResource("RectangleShape2D_wj7t2")
 
+[node name="TextureRect" type="TextureRect" parent="Platform3" unique_id=1612868240]
+offset_left = 888.0
+offset_top = 391.0
+offset_right = 1086.0
+offset_bottom = 418.0
+texture = ExtResource("3_vc5od")
+
 [node name="Platform4" type="StaticBody2D" parent="." unique_id=2117016632]
 position = Vector2(-295, -255)
-
-[node name="ColorRect" type="ColorRect" parent="Platform4" unique_id=18582131]
-offset_left = 1234.0
-offset_top = 643.0
-offset_right = 1432.0
-offset_bottom = 670.0
-color = Color(1, 0.22745098, 0.011764706, 1)
-metadata/_edit_use_anchors_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform4" unique_id=331997688]
 position = Vector2(1333, 657)
 shape = SubResource("RectangleShape2D_xy8ut")
 
+[node name="TextureRect" type="TextureRect" parent="Platform4" unique_id=1262654913]
+offset_left = 1234.0
+offset_top = 643.0
+offset_right = 1432.0
+offset_bottom = 670.0
+texture = ExtResource("3_vc5od")
+
 [node name="Platform5" type="StaticBody2D" parent="." unique_id=1492481908]
 position = Vector2(-295, -255)
-
-[node name="ColorRect" type="ColorRect" parent="Platform5" unique_id=911893327]
-offset_left = 1291.0
-offset_top = 539.0
-offset_right = 1489.0
-offset_bottom = 566.0
-color = Color(1, 0.22745098, 0.011764706, 1)
-metadata/_edit_use_anchors_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform5" unique_id=455067843]
 position = Vector2(1390, 553)
 shape = SubResource("RectangleShape2D_xy8ut")
 
+[node name="TextureRect" type="TextureRect" parent="Platform5" unique_id=1901168879]
+offset_left = 1291.0
+offset_top = 539.0
+offset_right = 1489.0
+offset_bottom = 566.0
+texture = ExtResource("3_vc5od")
+
 [node name="Platform6" type="StaticBody2D" parent="." unique_id=259415761]
 position = Vector2(-295, -255)
-
-[node name="ColorRect" type="ColorRect" parent="Platform6" unique_id=1572498928]
-offset_left = 758.0
-offset_top = 495.0
-offset_right = 956.0
-offset_bottom = 522.0
-color = Color(1, 0.22745098, 0.011764706, 1)
-metadata/_edit_use_anchors_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform6" unique_id=1750694312]
 position = Vector2(857, 508.51563)
 shape = SubResource("RectangleShape2D_xy8ut")
 
+[node name="TextureRect" type="TextureRect" parent="Platform6" unique_id=1253931702]
+offset_left = 758.0
+offset_top = 495.0
+offset_right = 956.0
+offset_bottom = 522.0
+texture = ExtResource("3_vc5od")
+
 [node name="player" parent="." unique_id=171225304 instance=ExtResource("2_og05i")]
-position = Vector2(486, 531)
+position = Vector2(441, 560)
 
 [node name="Web" type="Node2D" parent="." unique_id=900341925]
 position = Vector2(-106, 399)

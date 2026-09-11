@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b4hpkx1iq5oh6"]
 
 [ext_resource type="Script" uid="uid://2s3cwjychms" path="res://scenes/player.gd" id="1_g2els"]
-[ext_resource type="Texture2D" uid="uid://de16x68cbgitw" path="res://scenes/spiderman.png" id="2_qhqgy"]
+[ext_resource type="Texture2D" uid="uid://de16x68cbgitw" path="res://spiderman.png" id="2_qhqgy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vtiac"]
 size = Vector2(121, 133)

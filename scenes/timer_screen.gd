@@ -11,6 +11,9 @@ extends Node2D
 var time
 
 func _ready() -> void:
+	if Global.lives <= 0:
+		get_tree().change_scene_to_file("res://scenes/death_screen.tscn")
+	
 	await Timer(5.0) # using the function created
 	
 	if Global.minigames_done < 3: # if you havent completed 3 minigames yet 
@@ -23,7 +26,7 @@ func _ready() -> void:
 # should be next. Make sure you name your minigame saves appropriately.
 
 	else:
-		get_tree().change_scene_to_file("res://scenes/scene.tscn") # changes your scene
+		get_tree().change_scene_to_file("res://scenes/done_screen.tscn") # changes your scene
 	
 
 func _process(delta: float) -> void: # runs EVERY FRAME

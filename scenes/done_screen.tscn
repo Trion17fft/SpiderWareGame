@@ -1,10 +1,12 @@
 [gd_scene format=3 uid="uid://bom2253qpldrk"]
 
 [ext_resource type="Texture2D" uid="uid://cmuusyeqfm8iq" path="res://spidertitle.png" id="1_k66lo"]
-[ext_resource type="Texture2D" uid="uid://8hthl6x6enki" path="res://scenes/Spiderglide.png" id="2_c2erd"]
+[ext_resource type="Texture2D" uid="uid://8hthl6x6enki" path="res://Spiderglide.png" id="2_c2erd"]
 [ext_resource type="Texture2D" uid="uid://cw8efm5v3aq1w" path="res://Happy_Spidey.png" id="3_t6dg5"]
 [ext_resource type="FontFile" uid="uid://chx1umwkubnbk" path="res://AVENGEANCE HEROIC AVENGER BD.otf" id="4_t6dg5"]
 [ext_resource type="FontFile" uid="uid://hy8j1vqiuna" path="res://MADE Soulmaze PERSONAL USE.otf" id="5_deqd5"]
+[ext_resource type="Texture2D" uid="uid://f02uxa2frtwi" path="res://shop.png" id="6_5lftu"]
+[ext_resource type="FontFile" uid="uid://5gd6jrdu3onm" path="res://Minecraft.ttf" id="7_1nfvb"]
 
 [sub_resource type="GDScript" id="GDScript_5lftu"]
 script/source = "extends Node2D
@@ -91,12 +93,14 @@ flat = true
 icon_alignment = 1
 
 [node name="cookies" type="RichTextLabel" parent="." unique_id=1564352374]
-offset_left = 862.0
-offset_top = 315.0
-offset_right = 1005.0
-offset_bottom = 416.0
+offset_left = 815.0
+offset_top = 312.0
+offset_right = 958.0
+offset_bottom = 413.0
 theme_override_font_sizes/normal_font_size = 64
 text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Clicker" type="TextureButton" parent="." unique_id=150831019]
 offset_left = 490.0
@@ -108,12 +112,22 @@ focus_mode = 0
 texture_normal = ExtResource("2_c2erd")
 texture_hover = ExtResource("3_t6dg5")
 
+[node name="TextureRect" type="TextureRect" parent="." unique_id=188260318]
+offset_left = 795.0
+offset_top = 351.0
+offset_right = 974.0
+offset_bottom = 531.0
+texture = ExtResource("6_5lftu")
+
 [node name="mult" type="Button" parent="." unique_id=644752409]
-offset_left = 856.0
-offset_top = 408.0
-offset_right = 976.0
-offset_bottom = 480.0
+offset_left = 816.0
+offset_top = 427.0
+offset_right = 960.0
+offset_bottom = 510.0
+theme_override_colors/font_color = Color(0.9607843, 0.9019608, 0.78431374, 1)
+theme_override_fonts/font = ExtResource("7_1nfvb")
 text = "0"
+flat = true
 
 [connection signal="pressed" from="Restart" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="Clicker" to="." method="_on_cookie_pressed"]
