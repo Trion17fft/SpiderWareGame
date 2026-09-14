@@ -1,6 +1,93 @@
 [gd_scene format=3 uid="uid://c65rp6vgel58g"]
 
 [ext_resource type="Texture2D" uid="uid://bnn0nwmo2o7fx" path="res://SpiderTrash.png" id="1_uyutr"]
+[ext_resource type="Texture2D" uid="uid://de16x68cbgitw" path="res://spiderman.png" id="2_dwo6e"]
+
+[sub_resource type="Animation" id="Animation_mqh5l"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(45, 488)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-6.2831855]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:size")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(98.22353, 120.99994)]
+}
+
+[sub_resource type="Animation" id="Animation_7ns25"]
+resource_name = "go_to_the_trash"
+length = 3.0000000000000004
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(45, 488), Vector2(297, 242), Vector2(584, 13), Vector2(932, 154)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 2, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [-6.2831855, -3.1415927, 0.0, 6.2831855]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:size")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2.75, 3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(98.224, 121), Vector2(98.22353, 120.99994), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gwety"]
+_data = {
+&"RESET": SubResource("Animation_mqh5l"),
+&"go_to_the_trash": SubResource("Animation_7ns25")
+}
 
 [node name="death_screen" type="Node2D" unique_id=92267452]
 
@@ -9,3 +96,17 @@ offset_right = 1151.0
 offset_bottom = 648.0
 texture = ExtResource("1_uyutr")
 expand_mode = 2
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=21109755]
+offset_left = 45.0
+offset_top = 488.0
+offset_right = 143.22354
+offset_bottom = 608.99994
+rotation = -6.2831855
+pivot_offset = Vector2(49.112, 60.5)
+texture = ExtResource("2_dwo6e")
+expand_mode = 3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="TextureRect2" unique_id=328977383]
+libraries/ = SubResource("AnimationLibrary_gwety")
+autoplay = &"go_to_the_trash"

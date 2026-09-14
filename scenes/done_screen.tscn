@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cmuusyeqfm8iq" path="res://spidertitle.png" id="1_k66lo"]
 [ext_resource type="Texture2D" uid="uid://8hthl6x6enki" path="res://Spiderglide.png" id="2_c2erd"]
 [ext_resource type="Texture2D" uid="uid://cw8efm5v3aq1w" path="res://Happy_Spidey.png" id="3_t6dg5"]
+[ext_resource type="FontFile" uid="uid://d1c25jqcr28w1" path="res://Merriweather-Black.ttf" id="4_1nfvb"]
 [ext_resource type="FontFile" uid="uid://chx1umwkubnbk" path="res://AVENGEANCE HEROIC AVENGER BD.otf" id="4_t6dg5"]
 [ext_resource type="FontFile" uid="uid://hy8j1vqiuna" path="res://MADE Soulmaze PERSONAL USE.otf" id="5_deqd5"]
 [ext_resource type="Texture2D" uid="uid://f02uxa2frtwi" path="res://shop.png" id="6_5lftu"]
@@ -13,6 +14,7 @@ script/source = "extends Node2D
 
 @onready var cookie_label: RichTextLabel = $cookies
 @onready var multi_label: Button= $mult
+@onready var help: RichTextLabel = $help
 
 var cookies: float = 0
 var mult: float = 1        # multiplicateur de gain par clic, augmenté par le bouton amélioration
@@ -29,6 +31,17 @@ func _process(delta: float) -> void:
 			cookies -= cost
 			mult += 0.25
 			cost = 10 * mult
+	if Input.is_action_just_pressed(\"clic\"):
+		cookies += 1 * mult
+				
+	if cookies > 200:
+		help.text = \" \"
+		if cookies > 10000:
+			help.text = \"Bro you can stop\"
+			if cookies > 1000000:
+				help.text = \"Pls trust me get a life\"
+				if cookies > 1000000000:
+					help.text = \"Stop right now, there is no more place left\"
 
 # Bouton retour en arrière (garde ce nom, connecté à ton bouton \"back\")
 func _on_back_pressed() -> void:
@@ -37,6 +50,8 @@ func _on_back_pressed() -> void:
 # Bouton cookie cliquable
 func _on_cookie_pressed() -> void:
 	cookies += 1 * mult
+	
+
 
 # Bouton amélioration : augmente le multiplicateur
 func _on_mult_button_pressed() -> void:
@@ -44,6 +59,9 @@ func _on_mult_button_pressed() -> void:
 		cookies -= cost
 		mult += 0.25
 	cost = 10 * mult # le prix augmente avec le niveau actuel du multiplicateur
+	
+	
+
 		
 "
 
@@ -93,11 +111,15 @@ flat = true
 icon_alignment = 1
 
 [node name="cookies" type="RichTextLabel" parent="." unique_id=1564352374]
-offset_left = 815.0
-offset_top = 312.0
-offset_right = 958.0
+offset_left = 632.0
+offset_top = 338.0
+offset_right = 1142.0
 offset_bottom = 413.0
-theme_override_font_sizes/normal_font_size = 64
+theme_override_colors/default_color = Color(1, 0.90588236, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 0.77254903, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/normal_font = ExtResource("4_1nfvb")
+theme_override_font_sizes/normal_font_size = 55
 text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -128,6 +150,14 @@ theme_override_colors/font_color = Color(0.9607843, 0.9019608, 0.78431374, 1)
 theme_override_fonts/font = ExtResource("7_1nfvb")
 text = "0"
 flat = true
+
+[node name="help" type="RichTextLabel" parent="." unique_id=859559331]
+offset_left = 930.0
+offset_top = 592.0
+offset_right = 1144.0
+offset_bottom = 639.0
+text = "You can press space to up your clicker"
+horizontal_alignment = 1
 
 [connection signal="pressed" from="Restart" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="Clicker" to="." method="_on_cookie_pressed"]
