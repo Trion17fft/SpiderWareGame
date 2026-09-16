@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://hy8j1vqiuna"
-path="res://.godot/imported/MADE Soulmaze PERSONAL USE.otf-65b88c6ebc08d2ab6ce9d0adb24feb18.fontdata"
+uid="uid://buqxbepgdtahe"
+path="res://.godot/imported/MADE Soulmaze Italic PERSONAL USE.otf-8ee99ce38b70e9de998651a6dc6306a1.fontdata"
 
 [deps]
 
-source_file="res://MADE Soulmaze PERSONAL USE.otf"
-dest_files=["res://.godot/imported/MADE Soulmaze PERSONAL USE.otf-65b88c6ebc08d2ab6ce9d0adb24feb18.fontdata"]
+source_file="res://fonts/MADE Soulmaze Italic PERSONAL USE.otf"
+dest_files=["res://.godot/imported/MADE Soulmaze Italic PERSONAL USE.otf-8ee99ce38b70e9de998651a6dc6306a1.fontdata"]
 
 [params]
 

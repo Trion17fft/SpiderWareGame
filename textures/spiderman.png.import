@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnn0nwmo2o7fx"
-path="res://.godot/imported/SpiderTrash.png-19469270e7cc630351881bfca885b774.ctex"
+uid="uid://de16x68cbgitw"
+path="res://.godot/imported/spiderman.png-2ffe6ee6c08d4716d104862f8390ccf2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SpiderTrash.png"
-dest_files=["res://.godot/imported/SpiderTrash.png-19469270e7cc630351881bfca885b774.ctex"]
+source_file="res://textures/spiderman.png"
+dest_files=["res://.godot/imported/spiderman.png-2ffe6ee6c08d4716d104862f8390ccf2.ctex"]
 
 [params]
 

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c65rp6vgel58g"]
 
-[ext_resource type="Texture2D" uid="uid://bnn0nwmo2o7fx" path="res://SpiderTrash.png" id="1_uyutr"]
-[ext_resource type="Texture2D" uid="uid://de16x68cbgitw" path="res://spiderman.png" id="2_dwo6e"]
+[ext_resource type="Texture2D" uid="uid://bnn0nwmo2o7fx" path="res://textures/SpiderTrash.png" id="1_uyutr"]
+[ext_resource type="Texture2D" uid="uid://de16x68cbgitw" path="res://textures/spiderman.png" id="2_dwo6e"]
 
 [sub_resource type="Animation" id="Animation_mqh5l"]
 length = 0.001

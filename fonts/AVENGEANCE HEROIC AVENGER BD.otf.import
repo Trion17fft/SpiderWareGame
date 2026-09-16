@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://buqxbepgdtahe"
-path="res://.godot/imported/MADE Soulmaze Italic PERSONAL USE.otf-506f64e1043a78df57395845ce2665f7.fontdata"
+uid="uid://chx1umwkubnbk"
+path="res://.godot/imported/AVENGEANCE HEROIC AVENGER BD.otf-92b91ffd0fba034f0f2be5a0ec3e4cde.fontdata"
 
 [deps]
 
-source_file="res://MADE Soulmaze Italic PERSONAL USE.otf"
-dest_files=["res://.godot/imported/MADE Soulmaze Italic PERSONAL USE.otf-506f64e1043a78df57395845ce2665f7.fontdata"]
+source_file="res://fonts/AVENGEANCE HEROIC AVENGER BD.otf"
+dest_files=["res://.godot/imported/AVENGEANCE HEROIC AVENGER BD.otf-92b91ffd0fba034f0f2be5a0ec3e4cde.fontdata"]
 
 [params]
 

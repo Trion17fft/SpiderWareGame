@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://cjno6t8y5am6m"]
 
-[ext_resource type="Texture2D" uid="uid://dw6f8d7o30h6q" path="res://spidertitl.png" id="1_ju4f3"]
+[ext_resource type="Texture2D" uid="uid://dw6f8d7o30h6q" path="res://textures/spidertitl.png" id="1_ju4f3"]
 [ext_resource type="Script" uid="uid://ch8fr2r5u3k42" path="res://scenes/minigame_2.gd" id="1_uiylj"]
-[ext_resource type="FontFile" uid="uid://chx1umwkubnbk" path="res://AVENGEANCE HEROIC AVENGER BD.otf" id="3_6tcq3"]
-[ext_resource type="Texture2D" uid="uid://drpb2dakvaeqd" path="res://Carnage.png" id="3_eachr"]
-[ext_resource type="Texture2D" uid="uid://b60ihch57eumr" path="res://Doctor Octopus.png" id="4_6tcq3"]
-[ext_resource type="Texture2D" uid="uid://bynx65n2bae42" path="res://Green Goblin.png" id="5_6co8m"]
-[ext_resource type="Texture2D" uid="uid://62r4h3jyisxr" path="res://Mysterio.png" id="6_tbdge"]
-[ext_resource type="Texture2D" uid="uid://c3rx5bddg8bo5" path="res://Venom.png" id="7_my5wa"]
+[ext_resource type="FontFile" uid="uid://chx1umwkubnbk" path="res://fonts/AVENGEANCE HEROIC AVENGER BD.otf" id="3_6tcq3"]
+[ext_resource type="Texture2D" uid="uid://drpb2dakvaeqd" path="res://textures/Carnage.png" id="3_eachr"]
+[ext_resource type="Texture2D" uid="uid://b60ihch57eumr" path="res://textures/Doctor Octopus.png" id="4_6tcq3"]
+[ext_resource type="Texture2D" uid="uid://bynx65n2bae42" path="res://textures/Green Goblin.png" id="5_6co8m"]
+[ext_resource type="Texture2D" uid="uid://62r4h3jyisxr" path="res://textures/Mysterio.png" id="6_tbdge"]
+[ext_resource type="Texture2D" uid="uid://c3rx5bddg8bo5" path="res://textures/Venom.png" id="7_my5wa"]
 
 [sub_resource type="GDScript" id="GDScript_wj7t2"]
 script/source = "extends TextureButton

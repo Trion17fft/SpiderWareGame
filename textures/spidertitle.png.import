@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3rx5bddg8bo5"
-path="res://.godot/imported/Venom.png-73c875d7216fdb5f27dec865ac50c80a.ctex"
+uid="uid://cmuusyeqfm8iq"
+path="res://.godot/imported/spidertitle.png-6a34c51f8bfc31a4ebb43282633db509.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Venom.png"
-dest_files=["res://.godot/imported/Venom.png-73c875d7216fdb5f27dec865ac50c80a.ctex"]
+source_file="res://textures/spidertitle.png"
+dest_files=["res://.godot/imported/spidertitle.png-6a34c51f8bfc31a4ebb43282633db509.ctex"]
 
 [params]
 

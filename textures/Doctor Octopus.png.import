@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b60ihch57eumr"
-path="res://.godot/imported/Doctor Octopus.png-f2ec7bfdd0424b1ed287e267bc88e328.ctex"
+path="res://.godot/imported/Doctor Octopus.png-cd29af53e44af8fdf9fa6dca98f0b42e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Doctor Octopus.png"
-dest_files=["res://.godot/imported/Doctor Octopus.png-f2ec7bfdd0424b1ed287e267bc88e328.ctex"]
+source_file="res://textures/Doctor Octopus.png"
+dest_files=["res://.godot/imported/Doctor Octopus.png-cd29af53e44af8fdf9fa6dca98f0b42e.ctex"]
 
 [params]
 

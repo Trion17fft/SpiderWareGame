@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7uj2lpauvh4p"
-path="res://.godot/imported/brick_texture_1154x40.png-650e2a4a9c83015a36f2199a2e40baf7.ctex"
+uid="uid://dw6f8d7o30h6q"
+path="res://.godot/imported/spidertitl.png-2ce30273e898d7a86595d269136e4e10.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://brick_texture_1154x40.png"
-dest_files=["res://.godot/imported/brick_texture_1154x40.png-650e2a4a9c83015a36f2199a2e40baf7.ctex"]
+source_file="res://textures/spidertitl.png"
+dest_files=["res://.godot/imported/spidertitl.png-2ce30273e898d7a86595d269136e4e10.ctex"]
 
 [params]
 

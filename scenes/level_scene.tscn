@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://dv0jdchqijckf"]
 
 [ext_resource type="Script" uid="uid://c5do0pjm55vt" path="res://scenes/timer_screen.gd" id="1_a74lg"]
-[ext_resource type="Texture2D" uid="uid://cmuusyeqfm8iq" path="res://spidertitle.png" id="2_c8xsp"]
-[ext_resource type="Texture2D" uid="uid://iln6v2tv2a55" path="res://Web.png" id="3_fkwfp"]
-[ext_resource type="FontFile" uid="uid://buqxbepgdtahe" path="res://MADE Soulmaze Italic PERSONAL USE.otf" id="4_c8xsp"]
-[ext_resource type="FontFile" uid="uid://chx1umwkubnbk" path="res://AVENGEANCE HEROIC AVENGER BD.otf" id="4_fkwfp"]
+[ext_resource type="Texture2D" uid="uid://cmuusyeqfm8iq" path="res://textures/spidertitle.png" id="2_c8xsp"]
+[ext_resource type="Texture2D" uid="uid://iln6v2tv2a55" path="res://textures/Web.png" id="3_fkwfp"]
+[ext_resource type="FontFile" uid="uid://buqxbepgdtahe" path="res://fonts/MADE Soulmaze Italic PERSONAL USE.otf" id="4_c8xsp"]
+[ext_resource type="FontFile" uid="uid://chx1umwkubnbk" path="res://fonts/AVENGEANCE HEROIC AVENGER BD.otf" id="4_fkwfp"]
 
 [node name="level_scene" type="Node2D" unique_id=979992041]
 script = ExtResource("1_a74lg")

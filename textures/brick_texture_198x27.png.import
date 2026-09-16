@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://de16x68cbgitw"
-path="res://.godot/imported/spiderman.png-a1e60a76d5729aa0cfc0a26e4dc75ac8.ctex"
+uid="uid://dui5c4nn3ao8o"
+path="res://.godot/imported/brick_texture_198x27.png-cbb86b30b2fa396d4c7ac713800bcbaa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://spiderman.png"
-dest_files=["res://.godot/imported/spiderman.png-a1e60a76d5729aa0cfc0a26e4dc75ac8.ctex"]
+source_file="res://textures/brick_texture_198x27.png"
+dest_files=["res://.godot/imported/brick_texture_198x27.png-cbb86b30b2fa396d4c7ac713800bcbaa.ctex"]
 
 [params]
 

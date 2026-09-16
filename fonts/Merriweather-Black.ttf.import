@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://f34qyengpmy5"
-path="res://.godot/imported/MADE Soulmaze Outline PERSONAL USE.otf-5001bb15b5a11f442374effd36d50dd2.fontdata"
+uid="uid://d1c25jqcr28w1"
+path="res://.godot/imported/Merriweather-Black.ttf-54e402d86a26a37b22ec92c35eddf046.fontdata"
 
 [deps]
 
-source_file="res://MADE Soulmaze Outline PERSONAL USE.otf"
-dest_files=["res://.godot/imported/MADE Soulmaze Outline PERSONAL USE.otf-5001bb15b5a11f442374effd36d50dd2.fontdata"]
+source_file="res://fonts/Merriweather-Black.ttf"
+dest_files=["res://.godot/imported/Merriweather-Black.ttf-54e402d86a26a37b22ec92c35eddf046.fontdata"]
 
 [params]
 

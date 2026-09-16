@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://5gd6jrdu3onm"
-path="res://.godot/imported/Minecraft.ttf-b4cc597ac42d1410cc55dc192f0c0e34.fontdata"
+uid="uid://hy8j1vqiuna"
+path="res://.godot/imported/MADE Soulmaze PERSONAL USE.otf-2c2666a98698b4eaa0455215fc2f9008.fontdata"
 
 [deps]
 
-source_file="res://Minecraft.ttf"
-dest_files=["res://.godot/imported/Minecraft.ttf-b4cc597ac42d1410cc55dc192f0c0e34.fontdata"]
+source_file="res://fonts/MADE Soulmaze PERSONAL USE.otf"
+dest_files=["res://.godot/imported/MADE Soulmaze PERSONAL USE.otf-2c2666a98698b4eaa0455215fc2f9008.fontdata"]
 
 [params]
 

@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://csb0a1p502gkr"
-path="res://.godot/imported/AVENGEANCE HEROIC AVENGER BD (2).otf-b62b32be6ba6bdf64d9954cc3012a119.fontdata"
+uid="uid://c1mixdgabti1j"
+path="res://.godot/imported/Spiderman-g2wP.ttf-a3fb8b3bc4a7b1ad6c5f8995d4eecae8.fontdata"
 
 [deps]
 
-source_file="res://AVENGEANCE HEROIC AVENGER BD (2).otf"
-dest_files=["res://.godot/imported/AVENGEANCE HEROIC AVENGER BD (2).otf-b62b32be6ba6bdf64d9954cc3012a119.fontdata"]
+source_file="res://fonts/Spiderman-g2wP.ttf"
+dest_files=["res://.godot/imported/Spiderman-g2wP.ttf-a3fb8b3bc4a7b1ad6c5f8995d4eecae8.fontdata"]
 
 [params]
 

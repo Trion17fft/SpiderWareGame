@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://bom2253qpldrk"]
 
-[ext_resource type="Texture2D" uid="uid://cmuusyeqfm8iq" path="res://spidertitle.png" id="1_k66lo"]
-[ext_resource type="Texture2D" uid="uid://8hthl6x6enki" path="res://Spiderglide.png" id="2_c2erd"]
-[ext_resource type="Texture2D" uid="uid://cw8efm5v3aq1w" path="res://Happy_Spidey.png" id="3_t6dg5"]
-[ext_resource type="FontFile" uid="uid://d1c25jqcr28w1" path="res://Merriweather-Black.ttf" id="4_1nfvb"]
-[ext_resource type="FontFile" uid="uid://chx1umwkubnbk" path="res://AVENGEANCE HEROIC AVENGER BD.otf" id="4_t6dg5"]
-[ext_resource type="FontFile" uid="uid://hy8j1vqiuna" path="res://MADE Soulmaze PERSONAL USE.otf" id="5_deqd5"]
-[ext_resource type="Texture2D" uid="uid://f02uxa2frtwi" path="res://shop.png" id="6_5lftu"]
-[ext_resource type="FontFile" uid="uid://5gd6jrdu3onm" path="res://Minecraft.ttf" id="7_1nfvb"]
+[ext_resource type="Texture2D" uid="uid://cmuusyeqfm8iq" path="res://textures/spidertitle.png" id="1_k66lo"]
+[ext_resource type="Texture2D" uid="uid://8hthl6x6enki" path="res://textures/Spiderglide.png" id="2_c2erd"]
+[ext_resource type="Texture2D" uid="uid://cw8efm5v3aq1w" path="res://textures/Happy_Spidey.png" id="3_t6dg5"]
+[ext_resource type="FontFile" uid="uid://d1c25jqcr28w1" path="res://fonts/Merriweather-Black.ttf" id="4_1nfvb"]
+[ext_resource type="FontFile" uid="uid://chx1umwkubnbk" path="res://fonts/AVENGEANCE HEROIC AVENGER BD.otf" id="4_t6dg5"]
+[ext_resource type="FontFile" uid="uid://hy8j1vqiuna" path="res://fonts/MADE Soulmaze PERSONAL USE.otf" id="5_deqd5"]
+[ext_resource type="Texture2D" uid="uid://f02uxa2frtwi" path="res://textures/shop.png" id="6_5lftu"]
+[ext_resource type="FontFile" uid="uid://5gd6jrdu3onm" path="res://fonts/Minecraft.ttf" id="7_1nfvb"]
 
 [sub_resource type="GDScript" id="GDScript_5lftu"]
 script/source = "extends Node2D

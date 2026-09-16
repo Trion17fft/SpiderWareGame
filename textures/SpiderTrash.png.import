@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8hthl6x6enki"
-path="res://.godot/imported/Spiderglide.png-4f509e829d7ad8f79d2fcd052bed0856.ctex"
+uid="uid://bnn0nwmo2o7fx"
+path="res://.godot/imported/SpiderTrash.png-7bc2a4b291ecb4e73ef84c2ff3be0064.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Spiderglide.png"
-dest_files=["res://.godot/imported/Spiderglide.png-4f509e829d7ad8f79d2fcd052bed0856.ctex"]
+source_file="res://textures/SpiderTrash.png"
+dest_files=["res://.godot/imported/SpiderTrash.png-7bc2a4b291ecb4e73ef84c2ff3be0064.ctex"]
 
 [params]
 

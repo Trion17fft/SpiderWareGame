@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://cs0thkdiegooh"]
 
-[ext_resource type="Texture2D" uid="uid://dw6f8d7o30h6q" path="res://spidertitl.png" id="1_tk6fs"]
+[ext_resource type="Texture2D" uid="uid://dw6f8d7o30h6q" path="res://textures/spidertitl.png" id="1_tk6fs"]
 [ext_resource type="Script" uid="uid://dmkcpq5a5nvui" path="res://scenes/minigame_1.gd" id="1_v5ebm"]
 [ext_resource type="PackedScene" uid="uid://b4hpkx1iq5oh6" path="res://scenes/player.tscn" id="2_og05i"]
-[ext_resource type="Texture2D" uid="uid://iln6v2tv2a55" path="res://Web.png" id="3_lmjug"]
+[ext_resource type="Texture2D" uid="uid://iln6v2tv2a55" path="res://textures/Web.png" id="3_lmjug"]
 [ext_resource type="Script" uid="uid://degfgnktbcdnt" path="res://scenes/web.gd" id="3_v5ebm"]
-[ext_resource type="Texture2D" uid="uid://dui5c4nn3ao8o" path="res://brick_texture_198x27.png" id="3_vc5od"]
-[ext_resource type="Texture2D" uid="uid://b7uj2lpauvh4p" path="res://brick_texture_1154x40.png" id="3_xpvfh"]
-[ext_resource type="FontFile" uid="uid://hy8j1vqiuna" path="res://MADE Soulmaze PERSONAL USE.otf" id="6_j1cg4"]
+[ext_resource type="Texture2D" uid="uid://dui5c4nn3ao8o" path="res://textures/brick_texture_198x27.png" id="3_vc5od"]
+[ext_resource type="Texture2D" uid="uid://b7uj2lpauvh4p" path="res://textures/brick_texture_1154x40.png" id="3_xpvfh"]
+[ext_resource type="FontFile" uid="uid://hy8j1vqiuna" path="res://fonts/MADE Soulmaze PERSONAL USE.otf" id="6_j1cg4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qebma"]
 size = Vector2(1154.5, 41)

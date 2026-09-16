@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bynx65n2bae42"
-path="res://.godot/imported/Green Goblin.png-3403ee0dce8d854ff6a9ae16bf7f4cba.ctex"
+uid="uid://ctk0us2ruqxr"
+path="res://.godot/imported/ironmanmk7.png-385fcf01edd7ce4c9f1c28de3b52b752.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Green Goblin.png"
-dest_files=["res://.godot/imported/Green Goblin.png-3403ee0dce8d854ff6a9ae16bf7f4cba.ctex"]
+source_file="res://ironmanmk7.png"
+dest_files=["res://.godot/imported/ironmanmk7.png-385fcf01edd7ce4c9f1c28de3b52b752.ctex"]
 
 [params]
 
