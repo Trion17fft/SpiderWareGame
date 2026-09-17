@@ -6,7 +6,7 @@ var buttons_pressed := 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	Timer(7)
+	Timer(5)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -18,6 +18,8 @@ func _process(delta: float) -> void:
 			get_tree().change_scene_to_file("res://scenes/done_screen.tscn")
 		else:
 			get_tree().change_scene_to_file("res://scenes/level_scene.tscn")
+			Global.money += 1000
+			
 	elif time <= 0.0: # défaite (temps écoulé sans les 3 toiles)
 		Global.minigames_done -= 1
 		Global.lives -= 1

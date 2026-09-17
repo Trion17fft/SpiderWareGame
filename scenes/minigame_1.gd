@@ -20,6 +20,7 @@ func _process(delta: float) -> void:
 			get_tree().change_scene_to_file("res://scenes/done_screen.tscn")
 		else:
 			get_tree().change_scene_to_file("res://scenes/level_scene.tscn")
+			Global.money += 1000
 
 	elif time <= 0.0: # défaite (temps écoulé sans les 3 toiles)
 		finished = true

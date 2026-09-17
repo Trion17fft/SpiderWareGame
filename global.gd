@@ -3,7 +3,6 @@ extends Node
 
 var minigames_done = 0 # nombre de level finis
 var lives = 5 # nombre de vies
-var exp = 0 # experiences
 var money = 100 # argents
 
 
