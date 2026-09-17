@@ -6,6 +6,8 @@
 resource_name = "Player2"
 script/source = "extends CharacterBody2D
 
+
+
 var max_speed = 100
 var last_direction := Vector2(1,0)
 
@@ -207,8 +209,9 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_xy8ut"]
-radius = 7.071068
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fkwfp"]
+radius = 3.9988213
+height = 13.94734
 
 [node name="Player2" type="CharacterBody2D" unique_id=1960322997]
 script = SubResource("GDScript_qebma")
@@ -220,5 +223,14 @@ animation = &"walk_down"
 frame_progress = 0.11351998
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1506367238]
-position = Vector2(0, -8)
-shape = SubResource("CircleShape2D_xy8ut")
+position = Vector2(-7.450581e-09, -4)
+rotation = -1.5465246
+shape = SubResource("CapsuleShape2D_fkwfp")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1565943169 groups=["Player2"]]
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D" unique_id=1910922628]
+position = Vector2(-7.450581e-09, -4)
+rotation = -1.5465246
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("CapsuleShape2D_fkwfp")
