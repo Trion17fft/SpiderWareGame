@@ -9,7 +9,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 
 func _process(delta: float) -> void:
-	pass
+	Global.lives = 5
 
 
 func _on_start_pressed() -> void:

@@ -13,6 +13,7 @@ var time
 func _ready() -> void:
 	if Global.lives <= 0:
 		get_tree().change_scene_to_file("res://scenes/death_screen.tscn")
+		return
 	
 	await Timer(5.0) # using the function created
 	
