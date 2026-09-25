@@ -23,6 +23,7 @@ func _process(delta: float) -> void:
 	elif time <= 0.0: # défaite (temps écoulé sans les 3 toiles)
 		Global.minigames_done -= 1
 		Global.lives -= 1
+		Global.money += 1000
 		get_tree().change_scene_to_file("res://scenes/level_scene.tscn")
 	
 

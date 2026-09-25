@@ -26,6 +26,7 @@ func _process(delta: float) -> void:
 		finished = true
 		Global.minigames_done -= 1
 		Global.lives -= 1
+		Global.money += 1000
 		get_tree().change_scene_to_file("res://scenes/level_scene.tscn")
 
 func Web_collect() -> void:

@@ -10,6 +10,7 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	Global.lives = 5
+	Global.minigames_done = 0
 
 
 func _on_start_pressed() -> void:
