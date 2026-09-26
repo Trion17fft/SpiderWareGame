@@ -14,10 +14,10 @@ script/source = "extends Node2D
 
 @onready var cookie_label: RichTextLabel = $cookies
 @onready var multi_label: Button= $mult
-@onready var help: RichTextLabel = $help
+@onready var help: RichTextLabel= $help
 
 var cookies: float = 0
-var mult: float = 1        # multiplicateur de gain par clic, augmenté par le bouton amélioration
+var mult: float = 1
 var cost: float = 10
 
 func _ready() -> void:
@@ -31,9 +31,10 @@ func _process(delta: float) -> void:
 			cookies -= cost
 			mult += 0.25
 			cost = 10 * mult
+	
 	if Input.is_action_just_pressed(\"clic\"):
 		cookies += 1 * mult
-				
+	
 	if cookies > 200:
 		help.text = \" \"
 		if cookies > 10000:
@@ -43,26 +44,17 @@ func _process(delta: float) -> void:
 				if cookies > 1000000000:
 					help.text = \"Stop right now, there is no more place left\"
 
-# Bouton retour en arrière (garde ce nom, connecté à ton bouton \"back\")
 func _on_back_pressed() -> void:
 	get_tree().change_scene_to_file(\"res://scenes/scene.tscn\")
-
-# Bouton cookie cliquable
+	
 func _on_cookie_pressed() -> void:
 	cookies += 1 * mult
 	
-
-
-# Bouton amélioration : augmente le multiplicateur
 func _on_mult_button_pressed() -> void:
 	if cookies >= cost:
 		cookies -= cost
 		mult += 0.25
-	cost = 10 * mult # le prix augmente avec le niveau actuel du multiplicateur
-	
-	
-
-		
+		cost = 10 * mult
 "
 
 [node name="done_screen" type="Node2D" unique_id=658016781]
