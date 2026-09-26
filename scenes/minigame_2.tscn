@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://bynx65n2bae42" path="res://textures/Green Goblin.png" id="5_6co8m"]
 [ext_resource type="Texture2D" uid="uid://62r4h3jyisxr" path="res://textures/Mysterio.png" id="6_tbdge"]
 [ext_resource type="Texture2D" uid="uid://c3rx5bddg8bo5" path="res://textures/Venom.png" id="7_my5wa"]
+[ext_resource type="FontFile" uid="uid://f34qyengpmy5" path="res://fonts/MADE Soulmaze Outline PERSONAL USE.otf" id="9_6co8m"]
 
 [sub_resource type="GDScript" id="GDScript_wj7t2"]
 script/source = "extends TextureButton
@@ -300,6 +301,20 @@ rotation = 1.5707964
 scale = Vector2(0.16413374, 0.14050822)
 texture_normal = ExtResource("7_my5wa")
 script = SubResource("GDScript_wj7t2")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=2052328691]
+offset_left = 352.0
+offset_top = 11.0
+offset_right = 809.0
+offset_bottom = 239.0
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/line_separation = 62
+theme_override_constants/outline_size = 3
+theme_override_fonts/normal_font = ExtResource("9_6co8m")
+theme_override_font_sizes/normal_font_size = 38
+text = "Take Out Villains"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="pressed" from="button_1" to="button_1" method="_on_pressed"]
 [connection signal="pressed" from="button_2" to="button_2" method="_on_pressed"]

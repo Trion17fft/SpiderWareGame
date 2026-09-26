@@ -6,7 +6,7 @@ var time : float
 var finished = false 
 
 func _ready() -> void:
-	Timer(15)
+	Timer(12)
 
 func _process(delta: float) -> void:
 	timer.text = str(snapped(time, 0.10))
