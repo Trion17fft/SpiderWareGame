@@ -1,22 +1,10 @@
 # TheSpideyWare
 
-A pixel-art platformer where you jump and explore Spidey-themed levels — made with Godot.
+Funny Spidey-themed game write with [Godot](https://godotengine.org/)
 
-[![Play on itch.io](https://img.shields.io/badge/Play_on-itch.io-FA5C5C?style=for-the-badge&logo=itch.io&logoColor=white)](https://trion17fft.itch.io/thespideyware)
+## Where to play
 
-![Main Menu](screenshots/main_menu.png)
-
-![First Minigame](screenshots/First_lvl.png)
-
-## Try it
-
-▶️ **[Play TheSpideyWare in your browser](https://trion17fft.itch.io/thespideyware)** — no install needed.
-
-## Quick start
-
-1. Open the [itch.io page](https://trion17fft.itch.io/thespideyware).
-2. Click play — the game runs directly in the browser (HTML5).
-3. Swing, jump, and explore.
+**[Play TheSpideyWare in your browser](https://trion17fft.itch.io/thespideyware)** — have fun !!
 
 ## Controls
 
@@ -25,15 +13,16 @@ A pixel-art platformer where you jump and explore Spidey-themed levels — made 
 | Move         | Arrow keys / WASD   |
 | Jump         | Space               |
 | Clicker , Shop     | D  /  F   ,      Space      |
+|____________________________________|
 
 ## Features
 
-- 2D pixel-art platforming with web-swinging and climbing mechanics
-- Multiple levels to explore
-- Original Spidey-inspired art, fonts, and title screen
-- Playable directly in the browser, no download required
-
-## Credits
+- Several Mini-Games 
+- 2D Pixels Art
+- The game is inspired by the Universe of Spiderman / Spidey
+- Playable on your browser
+  
+  ## Credits
 
 - Built with [Godot Engine](https://godotengine.org/)
 - Fonts: MADE Soulmaze (personal use), Spiderman font
