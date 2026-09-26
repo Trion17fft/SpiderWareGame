@@ -2,9 +2,14 @@
 
 Funny Spidey-themed game write with [Godot](https://godotengine.org/)
 
+
 ## Where to play
 
 **[Play TheSpideyWare in your browser](https://trion17fft.itch.io/thespideyware)** — have fun !!
+
+![Main Menu](screenshots/main_menu.png)
+
+![First Minigame](screenshots/First_lvl.png)
 
 ## Controls
 
@@ -13,7 +18,6 @@ Funny Spidey-themed game write with [Godot](https://godotengine.org/)
 | Move         | Arrow keys / WASD   |
 | Jump         | Space               |
 | Clicker , Shop     | D  /  F   ,      Space      |
-|____________________________________|
 
 ## Features
 
